@@ -24,14 +24,15 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
 ## Installation Instructions
 1- exécuter la commande composer create-project --prefer-dist laravel/laravel blog 
 
-2- Créer une base de données MySQL pour le projet à travers le cli
-   1- mysql -u root -p, if using Vagrant: mysql -u homestead -psecret
-      create database laravelAuth; \q
-   2- créer a travers phpmyadmin
+2- Créer une base de données MySQL pour le projet à travers le cli ou phpmyadmin
    
 -3 Configurez votre fichier .env
 
 -4 exécuter les commandes : 
     1- php artisan migrate // pour la création des tables par défaut
     2- php artisan make:auth // pour la création des views(e connecter, S'inscrire..)
-    3-
+    3- php artisan make:command SendEmails // création d'une nouvelle commande pour l'envoi des emails
+
+5- exécuter la commandes /var/www/artisan schedule:run 1>> /dev/null 2>&1 ou bien créer un cron job dans votre hébergeur(Linux Hosting)
+
+    4
