@@ -33,6 +33,4 @@ Laravel is accessible, yet powerful, providing tools needed for large, robust ap
     2- php artisan make:auth // pour la création des views(e connecter, S'inscrire..)
     3- php artisan make:command SendEmails // création d'une nouvelle commande pour l'envoi des emails
 
-5- exécuter la commandes /var/www/artisan schedule:run 1>> /dev/null 2>&1 ou bien créer un cron job dans votre hébergeur(Linux Hosting)
-
-    4
+-5 exécuter la commandes /var/www/artisan schedule:run 1>> /dev/null 2>&1 ou bien créer un cron job dans votre hébergeur(Linux Hosting)
